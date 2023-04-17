@@ -1,3 +1,5 @@
+/* site fonts */
+/* site colours */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -224,4 +226,133 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-size: 0.85rem;
+}
+
+body,
+h3 {
+  font-family: "Lora", serif;
+}
+
+body,
+.button {
+  color: #14070E;
+}
+
+header {
+  letter-spacing: 1px;
+}
+header h1 {
+  font-size: 4.2rem;
+  line-height: 4.3rem;
+}
+
+nav,
+h1,
+h2,
+h4,
+.button {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button {
+  font-size: 0.9rem;
+  border: 3px solid transparent;
+  background-color: #DB9999;
+  padding: 12px 50px;
+  cursor: pointer;
+}
+.button:hover, .button:focus {
+  border: 3px solid #DB9999;
+  background-color: #F8F4F3;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url("../assets/lilJellies.jpg");
+  background-size: cover;
+  background-repeat: none;
+  color: #F8F4F3;
+}
+header ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header ul li {
+  font-size: 1rem;
+  margin: 0.35rem 2rem;
+}
+header ul li a {
+  padding: 1rem;
+  color: inherit;
+  text-shadow: 3px 1px #14070E;
+  letter-spacing: 1.5px;
+}
+header ul li a:hover, header ul li a:focus {
+  color: #DB9999;
+}
+header .mainTitle {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10rem;
+  padding: 1rem 0;
+}
+header p {
+  font-size: 1.3rem;
+  margin: 12px 0 20px;
 }

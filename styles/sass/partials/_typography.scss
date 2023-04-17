@@ -1,0 +1,29 @@
+@use './variables' as *;
+
+// Root Font Size
+html { font-size: 125%; }
+
+// Body Font Styles
+body { font-size: 0.85rem; }
+
+body,
+h3 { font-family: $bodyFont; }
+
+body, 
+.button { color: $black; }
+
+// Header/Nav, Headings & Button Font Styles
+header { 
+    letter-spacing: 1px;
+    
+    h1 {
+        font-size: 4.2rem;
+        line-height: 4.3rem;
+    }
+}
+
+nav,
+h1,
+h2,
+h4,
+.button { font-family: $headingFont; }

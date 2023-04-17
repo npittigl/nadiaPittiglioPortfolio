@@ -1,0 +1,39 @@
+@use './variables' as *;
+
+header {
+    min-height: 100vh;
+    background-image: url("../assets/lilJellies.jpg");
+    background-size: cover;
+    background-repeat: none;
+    color: $white;
+
+    ul {
+        justify-content: center;
+
+        li {
+            font-size: 1rem;
+            margin: 0.35rem 2rem;
+            a { 
+                padding: 1rem; 
+                color: inherit;
+                text-shadow: 3px 1px $black;
+                letter-spacing: 1.5px;
+    
+                &:hover,
+                &:focus { color: $accent; }
+            }
+        }
+    }
+
+    .mainTitle {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        padding: 1rem 0;
+    }
+
+    p { 
+        font-size: 1.3rem;
+        margin: 12px 0 20px; 
+    }
+}
