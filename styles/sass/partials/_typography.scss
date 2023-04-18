@@ -4,7 +4,10 @@
 html { font-size: 125%; }
 
 // Body Font Styles
-body { font-size: 0.85rem; }
+body { 
+    font-size: 0.85rem;
+    line-height: 25px;
+}
 
 body,
 h3 { font-family: $bodyFont; }
@@ -27,3 +30,8 @@ h1,
 h2,
 h4,
 .button { font-family: $headingFont; }
+
+h2 { 
+    font-size: 3.2rem;
+    line-height: 3.3rem; 
+}

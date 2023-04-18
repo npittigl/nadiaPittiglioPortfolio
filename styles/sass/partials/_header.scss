@@ -2,7 +2,12 @@
 
 header {
     min-height: 100vh;
-    background-image: url("../assets/lilJellies.jpg");
+    background-image:
+            linear-gradient(to top right,
+                rgba($black, 0.4),
+                rgba($black, 0.6),
+                rgba($primary, 0.8)),
+            url('../assets/lilJellies.jpg');
     background-size: cover;
     background-repeat: none;
     color: $white;
@@ -28,7 +33,7 @@ header {
     .mainTitle {
         flex-direction: column;
         align-items: center;
-        margin-top: 10rem;
+        margin-top: 13rem;
         padding: 1rem 0;
     }
 

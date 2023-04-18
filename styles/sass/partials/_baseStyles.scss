@@ -32,6 +32,9 @@ img {
     object-fit: cover;
 }
 
+.photo,
+.photo img { border-radius: 50%; }
+
 // Links 
 a {
     text-decoration: none;
