@@ -333,7 +333,7 @@ header {
   background-image: linear-gradient(to top right, rgba(20, 7, 14, 0.4), rgba(20, 7, 14, 0.6), rgba(54, 92, 70, 0.8)), url("../assets/lilJellies.jpg");
   background-size: cover;
   background-repeat: none;
-  color: #F8F4F3;
+  color: #FFF;
   overflow-x: hidden;
 }
 header ul {
@@ -538,4 +538,25 @@ header p {
   border: 4px solid #B6CAA2;
   -webkit-box-shadow: 2px 0px 3px #14070E, 0px -2px 3px #14070E, -2px 0px 3px #14070E, 0px 2px 3px #14070E;
           box-shadow: 2px 0px 3px #14070E, 0px -2px 3px #14070E, -2px 0px 3px #14070E, 0px 2px 3px #14070E;
+}
+
+.skillsSection {
+  background-color: #365C46;
+  color: #FFF;
+  padding: 4rem 0;
+}
+.skillsSection .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skillsSection .wrapper h2 {
+  margin-bottom: 2rem;
 }

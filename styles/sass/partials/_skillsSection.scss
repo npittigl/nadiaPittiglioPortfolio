@@ -1,2 +1,14 @@
 @use './variables' as *;
 
+.skillsSection {
+    background-color: $primary;
+    color: $white;
+    padding: 4rem 0;
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 { margin-bottom: 2rem; }
+    }
+}
