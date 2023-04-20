@@ -3,12 +3,40 @@
 .skillsSection {
     background-color: $primary;
     color: $white;
-    padding: 4rem 0;
+    padding: 3rem 0;
+
     .wrapper {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
 
-        h2 { margin-bottom: 2rem; }
+    h2 { margin-bottom: 2rem; }
+}
+
+.skillsList {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    img { 
+        width: 3rem; 
+        margin: 0 auto;
+    }
+
+    li {
+        width: calc(100% / 5);
+        margin: 10px 0;
+
+        p { 
+            font-size: 0.65rem;
+            letter-spacing: 1.5px;
+            margin: 5px 0;
+        }
+
+        i.fab,
+        i.fas { font-size: 3rem; }
     }
 }

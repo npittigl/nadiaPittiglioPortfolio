@@ -259,13 +259,14 @@ nav,
 h1,
 h2,
 h4,
-.button {
+.button,
+.skillsList p {
   font-family: "Roboto", sans-serif;
 }
 
 h2 {
-  font-size: 3.2rem;
-  line-height: 3.3rem;
+  font-size: 3.1rem;
+  line-height: 3.2rem;
 }
 
 h1,
@@ -318,7 +319,7 @@ a {
 }
 .button:hover, .button:focus {
   border: 3px solid #DB9999;
-  background-color: #F8F4F3;
+  background-color: #FFF;
 }
 
 .flexContainer {
@@ -329,8 +330,8 @@ a {
 
 header {
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(20, 7, 14, 0.4)), color-stop(rgba(20, 7, 14, 0.6)), to(rgba(54, 92, 70, 0.8))), url("../assets/lilJellies.jpg");
-  background-image: linear-gradient(to top right, rgba(20, 7, 14, 0.4), rgba(20, 7, 14, 0.6), rgba(54, 92, 70, 0.8)), url("../assets/lilJellies.jpg");
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(20, 7, 14, 0.4)), color-stop(rgba(20, 7, 14, 0.6)), to(rgba(54, 92, 70, 0.8))), url("../assets/headerImage.jpg");
+  background-image: linear-gradient(to top right, rgba(20, 7, 14, 0.4), rgba(20, 7, 14, 0.6), rgba(54, 92, 70, 0.8)), url("../assets/headerImage.jpg");
   background-size: cover;
   background-repeat: none;
   color: #FFF;
@@ -543,7 +544,7 @@ header p {
 .skillsSection {
   background-color: #365C46;
   color: #FFF;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 .skillsSection .wrapper {
   -webkit-box-orient: vertical;
@@ -557,6 +558,38 @@ header p {
       -ms-flex-align: center;
           align-items: center;
 }
-.skillsSection .wrapper h2 {
+.skillsSection h2 {
   margin-bottom: 2rem;
+}
+
+.skillsList {
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.skillsList img {
+  width: 3rem;
+  margin: 0 auto;
+}
+.skillsList li {
+  width: 20%;
+  margin: 10px 0;
+}
+.skillsList li p {
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  margin: 5px 0;
+}
+.skillsList li i.fab,
+.skillsList li i.fas {
+  font-size: 3rem;
+}
+
+.projectsSection {
+  background-color: #F8F4F3;
 }

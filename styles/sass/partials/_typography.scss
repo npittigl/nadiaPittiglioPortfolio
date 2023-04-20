@@ -29,9 +29,10 @@ nav,
 h1,
 h2,
 h4,
-.button { font-family: $headingFont; }
+.button,
+.skillsList p { font-family: $headingFont; }
 
 h2 { 
-    font-size: 3.2rem;
-    line-height: 3.3rem; 
+    font-size: 3.1rem;
+    line-height: 3.2rem; 
 }
