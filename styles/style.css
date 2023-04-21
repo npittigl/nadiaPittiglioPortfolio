@@ -233,13 +233,9 @@ html {
 }
 
 body {
+  font-family: "Lora", serif;
   font-size: 0.85rem;
   line-height: 25px;
-}
-
-body,
-h3 {
-  font-family: "Lora", serif;
 }
 
 body,
@@ -258,6 +254,7 @@ header h1 {
 nav,
 h1,
 h2,
+h3,
 h4,
 .button,
 .skillsList p {
@@ -267,6 +264,17 @@ h4,
 h2 {
   font-size: 3.1rem;
   line-height: 3.2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: #365C46;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
 }
 
 h1,
@@ -311,11 +319,11 @@ a {
 }
 
 .button {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border: 3px solid transparent;
   background-color: #DB9999;
-  padding: 12px 50px;
   cursor: pointer;
+  text-align: center;
 }
 .button:hover, .button:focus {
   border: 3px solid #DB9999;
@@ -365,6 +373,9 @@ header .mainTitle {
           align-items: center;
   margin-top: 13rem;
   padding: 1rem 0;
+}
+header .mainTitle .button {
+  padding: 9px 45px;
 }
 header p {
   font-size: 1.3rem;
@@ -503,7 +514,7 @@ header p {
 }
 
 .about {
-  padding: 5rem 0;
+  padding: 4rem 0 3rem;
 }
 .about .wrapper {
   -webkit-box-orient: vertical;
@@ -592,4 +603,36 @@ header p {
 
 .projectsSection {
   background-color: #F8F4F3;
+  padding: 4.7rem 0 2.2rem;
+}
+.projectsSection h2 {
+  text-align: center;
+}
+.projectsSection h4 {
+  margin-top: 5px;
+}
+.projectsSection img {
+  width: 100%;
+  height: 100%;
+}
+
+.project {
+  margin: 20px 0;
+  padding: 1rem;
+}
+.project div:not(.buttons) {
+  width: 50%;
+}
+.project .projectText {
+  padding: 2rem 1.6rem;
+}
+.project .buttons {
+  margin: 25px 0;
+}
+.project .buttons a {
+  width: 45%;
+  padding: 8px 4px;
+}
+.project .buttons a:nth-child(2) {
+  margin-left: 8px;
 }

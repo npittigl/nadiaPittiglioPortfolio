@@ -5,12 +5,10 @@ html { font-size: 125%; }
 
 // Body Font Styles
 body { 
+    font-family: $bodyFont;
     font-size: 0.85rem;
     line-height: 25px;
 }
-
-body,
-h3 { font-family: $bodyFont; }
 
 body, 
 .button { color: $black; }
@@ -28,11 +26,25 @@ header {
 nav,
 h1,
 h2,
+h3,
 h4,
 .button,
 .skillsList p { font-family: $headingFont; }
 
+// mk h2 font-size smaller?
 h2 { 
     font-size: 3.1rem;
     line-height: 3.2rem; 
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+// change <p> in skills section to <h4>?
+h4 {
+    text-transform: uppercase;
+    color: $primary;
+    font-size: 0.65rem;
+    letter-spacing: 1px;
 }

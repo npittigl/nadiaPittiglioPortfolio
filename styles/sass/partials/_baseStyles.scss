@@ -42,11 +42,11 @@ a {
 }
 
 .button { 
-    font-size: 0.90rem;
+    font-size: 0.80rem;
     border: 3px solid transparent;
     background-color: $accent;
-    padding: 12px 50px;
     cursor: pointer; 
+    text-align: center;
 
     &:hover,
     &:focus {
