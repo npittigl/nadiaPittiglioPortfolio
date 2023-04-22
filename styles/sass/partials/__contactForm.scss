@@ -1,0 +1,67 @@
+@use './variables' as *;
+
+// Contact Section Styles
+.contactSection {
+    background-color: $secondary;
+
+    h2 { 
+        text-align: center;
+        padding: 2.5rem 0 5px; 
+    }
+
+    .mediaLinks {
+        flex-direction: row;
+        justify-content: center;
+        color: $white;
+
+        li a {
+            color: $white;
+            padding: 10px;
+
+            i { font-size: 1.25rem; }
+        }
+    }
+}
+
+// Forms Styles
+form {
+    flex-direction: column;
+
+    .contact { flex-direction: column; }
+
+    input,
+    textarea {
+        border: none;
+
+        &:focus {
+            background: rgba($primary, 0.3);
+        }
+    }
+
+    input {
+        padding: 25px 30px;
+    }
+
+    textarea {
+        // margin: 17px 0;
+        padding: 35px 30px;
+        resize: none;
+    }
+
+    button {
+        align-self: center;
+        margin: 25px 0 4rem;
+        padding: 8px 40px;
+        letter-spacing: 0.5px;
+    }
+}
+
+// Footer Styles
+footer {
+    background-color: $primary;
+    padding: 12px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 0.70rem;
+    color: $white;
+}

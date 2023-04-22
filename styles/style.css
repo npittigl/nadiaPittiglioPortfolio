@@ -636,3 +636,72 @@ header p {
 .project .buttons a:nth-child(2) {
   margin-left: 8px;
 }
+
+.contactSection {
+  background-color: #B6CAA2;
+}
+.contactSection h2 {
+  text-align: center;
+  padding: 2.5rem 0 5px;
+}
+.contactSection .mediaLinks {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFF;
+}
+.contactSection .mediaLinks li a {
+  color: #FFF;
+  padding: 10px;
+}
+.contactSection .mediaLinks li a i {
+  font-size: 1.25rem;
+}
+
+form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form .contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form input,
+form textarea {
+  border: none;
+}
+form input:focus,
+form textarea:focus {
+  background: rgba(54, 92, 70, 0.3);
+}
+form input {
+  padding: 25px 30px;
+}
+form textarea {
+  padding: 35px 30px;
+  resize: none;
+}
+form button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 25px 0 4rem;
+  padding: 8px 40px;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  background-color: #365C46;
+  padding: 12px 0;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  color: #FFF;
+}
