@@ -4,54 +4,69 @@
 .contactSection {
     background-color: $secondary;
 
-    h2 { 
-        text-align: center;
-        padding: 2.5rem 0 5px; 
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    h2 { padding: 2.5rem 0 5px; }
 
     .mediaLinks {
         flex-direction: row;
-        justify-content: center;
-        color: $white;
 
         li a {
+            font-size: 1.25rem;
             color: $white;
             padding: 10px;
 
-            i { font-size: 1.25rem; }
+            &:hover,
+            &:focus { color: $primary; }
         }
+    }
+
+    p { 
+        text-align: center;
+        width: 80%;
+        margin: 1.2rem 0;
     }
 }
 
 // Forms Styles
 form {
     flex-direction: column;
+    width: 75%;
 
-    .contact { flex-direction: column; }
+    .contactInfo { 
+        flex-direction: column;
+        
+        &:nth-child(2) { margin: 1rem 0; }
+    }
+
+    label { 
+        font-family: $headingFont; 
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+    }
 
     input,
     textarea {
         border: none;
 
-        &:focus {
-            background: rgba($primary, 0.3);
-        }
+        &:focus { background: rgba($primary, 0.3); }
     }
 
-    input {
-        padding: 25px 30px;
-    }
+    input { padding: 18px 20px; }
 
     textarea {
-        // margin: 17px 0;
-        padding: 35px 30px;
+        padding: 25px 20px;
         resize: none;
     }
 
     button {
         align-self: center;
-        margin: 25px 0 4rem;
-        padding: 8px 40px;
+        margin: 1.4rem 0 4rem;
+        padding: 11px 50px 10px;
         letter-spacing: 0.5px;
     }
 }
