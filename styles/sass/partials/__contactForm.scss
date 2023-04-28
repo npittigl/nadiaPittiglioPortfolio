@@ -35,7 +35,7 @@
 // Forms Styles
 form {
     flex-direction: column;
-    width: 75%;
+    min-width: 75%;
 
     .contactInfo { 
         flex-direction: column;
