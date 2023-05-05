@@ -10,11 +10,9 @@
         align-items: center;
     }
 
-    h2 { padding: 2.5rem 0 5px; }
+    h2 { padding: 4.7rem 0 10px; }
 
     .mediaLinks {
-        flex-direction: row;
-
         li a {
             font-size: 1.25rem;
             color: $white;
@@ -28,7 +26,7 @@
     p { 
         text-align: center;
         width: 80%;
-        margin: 1.2rem 0;
+        margin: 0.5rem 0 1.2rem;
     }
 }
 
@@ -39,7 +37,6 @@ form {
 
     .contactInfo { 
         flex-direction: column;
-        
         &:nth-child(2) { margin: 1rem 0; }
     }
 

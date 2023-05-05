@@ -696,13 +696,7 @@ header .mainTitle .button {
           align-items: center;
 }
 .contactSection h2 {
-  padding: 2.5rem 0 5px;
-}
-.contactSection .mediaLinks {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  padding: 4.7rem 0 10px;
 }
 .contactSection .mediaLinks li a {
   font-size: 1.25rem;
@@ -715,7 +709,7 @@ header .mainTitle .button {
 .contactSection p {
   text-align: center;
   width: 80%;
-  margin: 1.2rem 0;
+  margin: 0.5rem 0 1.2rem;
 }
 
 form {
@@ -851,6 +845,28 @@ footer {
   .skillsList .half {
     width: 33.3333333333%;
   }
+  .projectsSection .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectsSection .project .projectImage,
+.projectsSection .project .projectText {
+    width: 100%;
+  }
+  .projectsSection .project .projectText {
+    padding: 1.6rem 0.3rem 1.6rem 0.5rem;
+  }
+  .contactSection h2 {
+    padding: 3.5rem 0 7px;
+  }
+  .contactSection p {
+    width: 90%;
+  }
+  .contactSection form {
+    width: 85%;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -896,5 +912,21 @@ footer {
   }
   .skillsSection .skillsList li {
     width: 33.3333333333%;
+  }
+  .projectsSection {
+    padding: 2.5rem 0 0.5rem;
+  }
+  .projectsSection h2 {
+    margin-bottom: 1.5rem;
+  }
+  .contactSection h2 {
+    padding: 2.5rem 0 0;
+  }
+  .contactSection p,
+.contactSection form {
+    width: 95%;
+  }
+  .contactSection form button {
+    margin: 1.4rem 0 2.5rem;
   }
 }
