@@ -235,7 +235,7 @@ html {
 body {
   font-family: "Lora", serif;
   font-size: 0.85rem;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 body,
@@ -262,18 +262,20 @@ h4,
 }
 
 h2 {
-  font-size: 3.1rem;
-  line-height: 3.2rem;
+  font-size: 3rem;
+  line-height: 3.1rem;
 }
 
 h3 {
   font-size: 1.3rem;
+  line-height: 1.4rem;
 }
 
 h4 {
   text-transform: uppercase;
   color: #365C46;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -534,10 +536,8 @@ header .mainTitle .button {
   transform: scale(0.3);
 }
 
-.about {
-  padding: 4rem 0 3rem;
-}
 .about .wrapper {
+  padding: 4rem 0 3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -550,24 +550,24 @@ header .mainTitle .button {
           align-items: center;
 }
 .about .wrapper h2 {
-  margin: 1.2rem 0 0.8rem;
+  margin: 1.2rem 0 0.3rem;
 }
 .about .wrapper p {
+  width: 78%;
   text-align: center;
-  width: 90%;
 }
 .about .wrapper p:nth-child(even) {
   margin: 15px 0;
 }
 
 .photo {
-  padding: 0.65rem;
+  padding: 0.6rem;
   background-color: #F7E4DC;
-  -webkit-box-shadow: 1px 0px 0 #14070E, 0px -1px 0 #14070E, -1px 0px 0 #14070E, 0px 1px 0 #14070E, 13px 0 0 #DB9999, 14px 0 0 #14070E, -13px 0 0 #DB9999, -14px 0 0 #14070E, 0 -10px 0 #B6CAA2, 0 -11px 0 #14070E, 0 10px 0 #B6CAA2, 0 11px 0 #14070E;
-          box-shadow: 1px 0px 0 #14070E, 0px -1px 0 #14070E, -1px 0px 0 #14070E, 0px 1px 0 #14070E, 13px 0 0 #DB9999, 14px 0 0 #14070E, -13px 0 0 #DB9999, -14px 0 0 #14070E, 0 -10px 0 #B6CAA2, 0 -11px 0 #14070E, 0 10px 0 #B6CAA2, 0 11px 0 #14070E;
+  -webkit-box-shadow: 1px 0px 0 #14070E, 0px -1px 0 #14070E, -1px 0px 0 #14070E, 0px 1px 0 #14070E, 11px 0 0 #DB9999, 12px 0 0 #14070E, -11px 0 0 #DB9999, -12px 0 0 #14070E, 0 -9px 0 #B6CAA2, 0 -10px 0 #14070E, 0 9px 0 #B6CAA2, 0 10px 0 #14070E;
+          box-shadow: 1px 0px 0 #14070E, 0px -1px 0 #14070E, -1px 0px 0 #14070E, 0px 1px 0 #14070E, 11px 0 0 #DB9999, 12px 0 0 #14070E, -11px 0 0 #DB9999, -12px 0 0 #14070E, 0 -9px 0 #B6CAA2, 0 -10px 0 #14070E, 0 9px 0 #B6CAA2, 0 10px 0 #14070E;
 }
 .photo img {
-  width: 215px;
+  width: 160px;
   border: 4px solid #B6CAA2;
   -webkit-box-shadow: 2px 0px 3px #14070E, 0px -2px 3px #14070E, -2px 0px 3px #14070E, 0px 2px 3px #14070E;
           box-shadow: 2px 0px 3px #14070E, 0px -2px 3px #14070E, -2px 0px 3px #14070E, 0px 2px 3px #14070E;
@@ -628,27 +628,28 @@ header .mainTitle .button {
 }
 .projectsSection h2 {
   text-align: center;
+  margin-bottom: 2.3rem;
 }
 .projectsSection h4 {
-  margin-top: 5px;
+  margin: 8px 0;
 }
 
 .project {
   margin: 20px 0;
-  padding: 1rem;
 }
 .project:nth-child(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  text-align: right;
 }
 .project .projectImage,
 .project .projectText {
   width: 50%;
 }
 .project .projectText {
-  padding: 1.6rem;
+  padding: 1.6rem 1rem 1.6rem 1.6rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -656,8 +657,17 @@ header .mainTitle .button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+}
+.project .projectImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .project .buttons {
   margin-top: 15px;
@@ -822,15 +832,69 @@ footer {
     height: 100vh;
   }
   header .mainTitle h1 {
-    font-size: 3rem;
-    line-height: 3.1rem;
+    font-size: 3.5rem;
+    line-height: 3.6rem;
   }
   header .mainTitle p {
     font-size: 1.3rem;
     margin: 8px 0 18px;
   }
-  header .mainTitle .button {
-    padding: 9px 45px;
+  .about .wrapper p {
+    width: 100%;
+  }
+  .skillsList {
+    width: 100%;
+  }
+  .skillsList li {
+    width: 25%;
+  }
+  .skillsList .half {
+    width: 33.3333333333%;
   }
 }
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+  }
+  h2 {
+    font-size: 2.7rem;
+    line-height: 3.1rem;
+  }
+  header .mainTitle h1 {
+    font-size: 3rem;
+    line-height: 3.1rem;
+  }
+  header .mainTitle .button {
+    padding: 9px 25px;
+  }
+  .about .wrapper {
+    padding: 2.8rem 0 2rem;
+  }
+  .about .wrapper h2 {
+    margin: 1rem 0 0.2rem;
+  }
+  .about .wrapper p {
+    padding: 0 4px;
+  }
+  .photo {
+    padding: 0.58rem;
+    -webkit-box-shadow: 1px 0px 0 #14070E, 0px -1px 0 #14070E, -1px 0px 0 #14070E, 0px 1px 0 #14070E, 9px 0 0 #DB9999, 10px 0 0 #14070E, -9px 0 0 #DB9999, -10px 0 0 #14070E, 0 -8px 0 #B6CAA2, 0 -9px 0 #14070E, 0 8px 0 #B6CAA2, 0 9px 0 #14070E;
+            box-shadow: 1px 0px 0 #14070E, 0px -1px 0 #14070E, -1px 0px 0 #14070E, 0px 1px 0 #14070E, 9px 0 0 #DB9999, 10px 0 0 #14070E, -9px 0 0 #DB9999, -10px 0 0 #14070E, 0 -8px 0 #B6CAA2, 0 -9px 0 #14070E, 0 8px 0 #B6CAA2, 0 9px 0 #14070E;
+  }
+  .photo img {
+    width: 145px;
+    border: 3px solid #B6CAA2;
+    -webkit-box-shadow: 1px 0px 3px #14070E, 0px -1px 3px #14070E, -1px 0px 3px #14070E, 0px 1px 3px #14070E;
+            box-shadow: 1px 0px 3px #14070E, 0px -1px 3px #14070E, -1px 0px 3px #14070E, 0px 1px 3px #14070E;
+  }
+  .skillsSection {
+    padding: 1.65rem 0 1.5rem;
+  }
+  .skillsSection h2 {
+    margin-bottom: 1rem;
+  }
+  .skillsSection .skillsList li {
+    width: 33.3333333333%;
+  }
+}

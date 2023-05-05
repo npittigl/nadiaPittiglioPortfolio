@@ -23,8 +23,7 @@
         left: -100vw;
         z-index: 9;
         transition: all 1s ease-in-out;
-        // padding-top: 45px;
-
+        
         ul { flex-direction: column; }
 
         ul, a { height: 100%; }
@@ -53,29 +52,88 @@
     }
 
     // Header
-    header {
-        .mainTitle {
-            height: 100vh;
-
-            h1 { 
-                font-size: 3rem;
-                line-height: 3.1rem;
-            }
-
-            p {
-                font-size: 1.3rem;
-                margin: 8px 0 18px;
-            }
-
-            .button {
-                padding: 9px 45px;
-            }
+    header .mainTitle {
+        height: 100vh;
+        h1 { 
+            font-size: 3.5rem;
+            line-height: 3.6rem;
+        }
+        p {
+            font-size: 1.3rem;
+            margin: 8px 0 18px;
         }
     }
-}
 
-@media (max-height: 600px) {
+    // About Section
+    .about .wrapper p { width: 100%; }
+
+    // Skills Section
+    .skillsList {
+        width: 100%;
+        li { width: calc(100% / 4); }
+        .half { width: calc(100% / 3); }
+    }
+
+    // Projects Section
+    
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    // Wrapper
+    .wrapper { width: 95%; }
+
+    // Section Headings
+    h2 {
+        font-size: 2.7rem;
+        line-height: 3.1rem;
+    }
+
+    // Header
+    header .mainTitle {
+        h1 {
+            font-size: 3rem;
+            line-height: 3.1rem;
+        }
+        .button { padding: 9px 25px; }
+    }
+
+    // About Section
+    .about .wrapper {
+        padding: 2.8rem 0 2rem;
+        h2 { margin: 1rem 0 0.20rem; }
+        p { padding: 0 4px; }
+    }
+
+    .photo {
+        padding: 0.58rem;
+        box-shadow: 1px 0px 0 $black,
+            0px -1px 0 $black,
+            -1px 0px 0 $black,
+            0px 1px 0 $black,
+            9px 0 0 $accent,
+            10px 0 0 $black,
+            -9px 0 0 $accent,
+            -10px 0 0 $black,
+            0 -8px 0 $secondary,
+            0 -9px 0 $black,
+            0 8px 0 $secondary,
+            0 9px 0 $black;
+
+        img {
+            width: 145px;
+            border: 3px solid $secondary;
+            box-shadow: 1px 0px 3px $black,
+                0px -1px 3px $black,
+                -1px 0px 3px $black,
+                0px 1px 3px $black;
+        }
+    }
+
+    // Skills Section
+    .skillsSection {
+        padding: 1.65rem 0 1.5rem;
+        h2 { margin-bottom: 1rem; }
+        .skillsList li { width: calc(100% / 3); }
+    }
+}

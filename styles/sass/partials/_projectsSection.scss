@@ -4,25 +4,35 @@
     background-color: $tertiary;
     padding: 4.7rem 0 2.2rem;
 
-    h2 { text-align: center; }
+    h2 { 
+        text-align: center; 
+        margin-bottom: 2.3rem;
+    }
 
-    h4 { margin-top: 5px; }
+    h4 { margin: 8px 0; }
 }
 
 .project {
     margin: 20px 0;
-    padding: 1rem;
 
-    &:nth-child(odd) { flex-direction: row-reverse; }
+    &:nth-child(odd) { 
+        flex-direction: row-reverse; 
+        text-align: right;
+    }
 
     .projectImage,
     .projectText { width: 50%; }
 
     .projectText { 
-        padding: 1.6rem; 
+        padding: 1.6rem 1rem 1.6rem 1.6rem; 
         flex-direction: column;
         justify-content: center;
-        align-content: center;
+    }
+
+    .projectImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .buttons {
