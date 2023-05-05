@@ -379,14 +379,24 @@ header {
   background-size: cover;
   background-repeat: none;
   color: #FFF;
-  overflow-x: hidden;
 }
 header .mainTitle {
+  height: calc(100vh - 60px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  margin: 30% 0 2rem;
 }
 header .mainTitle p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 1.32rem;
   margin: 12px 0 20px;
 }
 header .mainTitle .button {
@@ -771,7 +781,6 @@ footer {
     z-index: 9;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    padding-top: 45px;
   }
   #menu ul {
     -webkit-box-orient: vertical;
@@ -808,6 +817,20 @@ footer {
     left: 0;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+  }
+  header .mainTitle {
+    height: 100vh;
+  }
+  header .mainTitle h1 {
+    font-size: 3rem;
+    line-height: 3.1rem;
+  }
+  header .mainTitle p {
+    font-size: 1.3rem;
+    margin: 8px 0 18px;
+  }
+  header .mainTitle .button {
+    padding: 9px 45px;
   }
 }
 /* Landscape phones and down */

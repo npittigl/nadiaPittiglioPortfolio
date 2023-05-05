@@ -23,7 +23,7 @@
         left: -100vw;
         z-index: 9;
         transition: all 1s ease-in-out;
-        padding-top: 45px;
+        // padding-top: 45px;
 
         ul { flex-direction: column; }
 
@@ -51,6 +51,30 @@
         left: 0;
         transition: all 1s ease-in-out;
     }
+
+    // Header
+    header {
+        .mainTitle {
+            height: 100vh;
+
+            h1 { 
+                font-size: 3rem;
+                line-height: 3.1rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                margin: 8px 0 18px;
+            }
+
+            .button {
+                padding: 9px 45px;
+            }
+        }
+    }
+}
+
+@media (max-height: 600px) {
 }
 
 /* Landscape phones and down */

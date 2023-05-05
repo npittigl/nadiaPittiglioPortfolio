@@ -2,8 +2,6 @@
 
 // 1. target hamburger menu button 
 const menuButton = document.querySelector('.toggle');
-const menuItem = document.querySelectorAll('.menuItem');
-// get ul element from HTML
 const menuList = document.getElementById('menu');
 const menuUl = document.getElementById('menuUl');
 

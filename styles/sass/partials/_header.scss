@@ -11,14 +11,17 @@ header {
     background-size: cover;
     background-repeat: none;
     color: $white;
-    overflow-x: hidden;
 
     .mainTitle {
+        height: calc(100vh - 60px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        margin: 30% 0 2rem;
 
         p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
+            line-height: 1.32rem;
             margin: 12px 0 20px;
         }
 
