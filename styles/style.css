@@ -235,7 +235,7 @@ html {
 body {
   font-family: "Lora", serif;
   font-size: 0.85rem;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 body,
@@ -247,8 +247,8 @@ header {
   letter-spacing: 1px;
 }
 header h1 {
-  font-size: 4.2rem;
-  line-height: 4.3rem;
+  font-size: 4rem;
+  line-height: 4.1rem;
 }
 
 nav,
@@ -336,8 +336,44 @@ a {
   display: flex;
 }
 
+nav ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul li {
+  font-size: 1rem;
+  margin: 0 4%;
+}
+nav ul li a {
+  padding: 1rem;
+  color: inherit;
+  text-shadow: 3px 1px #14070E;
+  letter-spacing: 1.5px;
+}
+nav ul li a:hover, nav ul li a:focus {
+  color: #DB9999;
+}
+
+.toggle {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #DB9999;
+}
+.toggle i.fa-bars,
+.toggle i.fa-times {
+  font-size: 1.65rem;
+}
+.toggle i.fa-bars:hover, .toggle i.fa-bars:focus,
+.toggle i.fa-times:hover,
+.toggle i.fa-times:focus {
+  color: #FFF;
+}
+
 header {
-  min-height: 100vh;
+  height: 100vh;
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(20, 7, 14, 0.4)), color-stop(rgba(20, 7, 14, 0.6)), to(rgba(54, 92, 70, 0.8))), url("../assets/headerImage.jpg");
   background-image: linear-gradient(to top right, rgba(20, 7, 14, 0.4), rgba(20, 7, 14, 0.6), rgba(54, 92, 70, 0.8)), url("../assets/headerImage.jpg");
   background-size: cover;
@@ -345,41 +381,16 @@ header {
   color: #FFF;
   overflow-x: hidden;
 }
-header ul {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-header ul li {
-  font-size: 1rem;
-  margin: 0.35rem 2rem;
-}
-header ul li a {
-  padding: 1rem;
-  color: inherit;
-  text-shadow: 3px 1px #14070E;
-  letter-spacing: 1.5px;
-}
-header ul li a:hover, header ul li a:focus {
-  color: #DB9999;
-}
 header .mainTitle {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 13rem;
-  padding: 1rem 0;
+  text-align: center;
+  margin: 30% 0 2rem;
+}
+header .mainTitle p {
+  font-size: 1.3rem;
+  margin: 12px 0 20px;
 }
 header .mainTitle .button {
   padding: 9px 45px;
-}
-header p {
-  font-size: 1.3rem;
-  margin: 12px 0 20px;
 }
 
 .bubble {
@@ -739,3 +750,64 @@ footer {
   font-size: 0.7rem;
   color: #FFF;
 }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+    position: fixed;
+    right: 5%;
+    top: 20px;
+    z-index: 10;
+  }
+  #menu {
+    width: 100vw;
+    height: 100vh;
+    background: #365C46;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 9;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    padding-top: 45px;
+  }
+  #menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu ul, #menu a {
+    height: 100%;
+  }
+  #menu li, #menu a {
+    width: inherit;
+  }
+  #menu li {
+    margin: 0;
+    height: 20%;
+    max-height: 100px;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+  }
+  #menu li a {
+    padding: 25px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu.slideOut {
+    left: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+}
+/* Landscape phones and down */

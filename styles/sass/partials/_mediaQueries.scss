@@ -1,0 +1,57 @@
+@use './variables' as *;
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    // NAV SLIDE OUT MENU:
+    .toggle {
+        display: block;
+        position: fixed;
+        right: 5%;
+        top: 20px;
+        z-index: 10;
+    }
+
+    #menu {
+        width: 100vw;
+        height: 100vh;
+        background: $primary;
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        z-index: 9;
+        transition: all 1s ease-in-out;
+        padding-top: 45px;
+
+        ul { flex-direction: column; }
+
+        ul, a { height: 100%; }
+
+        li, a { width: inherit; }
+
+        li {
+            margin: 0;
+            height: 20%;
+            max-height: 100px;
+            font-size: 1.8rem;
+            line-height: 1.9rem;
+
+            a {
+                padding: 25px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    #menu.slideOut {
+        left: 0;
+        transition: all 1s ease-in-out;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}

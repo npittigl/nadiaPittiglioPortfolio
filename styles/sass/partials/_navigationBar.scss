@@ -1,0 +1,39 @@
+@use './variables' as *;
+
+nav ul {
+    justify-content: center;
+    
+    li {
+        font-size: 1rem;
+        margin: 0 4%;
+
+        a {
+            padding: 1rem;
+            color: inherit;
+            text-shadow: 3px 1px $black;
+            letter-spacing: 1.5px;
+
+            &:hover,
+            &:focus {
+                color: $accent;
+            }
+        }
+    }
+}
+
+// Hamburger Menu Icon/Menu Slide Out Styles
+.toggle { 
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: $accent;
+
+    i.fa-bars,
+    i.fa-times {
+        font-size: 1.65rem;
+
+        &:hover,
+        &:focus { color: $white; }
+    }
+}

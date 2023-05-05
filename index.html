@@ -16,39 +16,45 @@
 </head>
 <body>
     <!-- Header Begins -->
-    <header>
+    <header id="home">
         <!-- Header Wrapper -->
         <div class="wrapper">
             <!-- Navigation Bar -->
-            <nav>
-                <ul class="flexContainer">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav id="menu">
+                <!-- Hamburger Menu Icon -->
+                <button class="toggle" aria-label="Click here to open or close main menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                
+                <!-- Nav Menu for Big Screens -->
+                <ul class="flexContainer" id="menuUl">
+                    <li class="menuItem"><a href="#home" class="menuLink">Home</a></li>
+                    <li class="menuItem"><a href="#about" class="menuLink">About</a></li>
+                    <li class="menuItem"><a href="#projects" class="menuLink">Projects</a></li>
+                    <li class="menuItem"><a href="#contact" class="menuLink">Contact</a></li>
                 </ul>
             </nav>
             
             <!-- Main Title -->
-            <div class="mainTitle flexContainer">
+            <div class="mainTitle">
                 <h1>Nadia Pittiglio</h1>
                 <p>Front End Web Developer</p>
                 <!-- Link/Button -->
-                <a class="button" href="#about">Get in Touch</a>
+                <a class="button" href="#contact">Get in Touch</a>
             </div><!-- Main Title Ends -->
         </div><!-- Header Wrapper Ends -->
 
         <!-- Divs for Bubbles Animation -->
-        <div class="bubble x1"></div>
-        <div class="bubble x2"></div>
-        <div class="bubble x3"></div>
-        <div class="bubble x4"></div>
-        <div class="bubble x5"></div>
-        <div class="bubble x6"></div>
-        <div class="bubble x7"></div>
-        <div class="bubble x8"></div>
-        <div class="bubble x9"></div>
-        <div class="bubble x10"></div>
+        <div class="bubble x1" aria-hidden="true"></div>
+        <div class="bubble x2" aria-hidden="true"></div>
+        <div class="bubble x3" aria-hidden="true"></div>
+        <div class="bubble x4" aria-hidden="true"></div>
+        <div class="bubble x5" aria-hidden="true"></div>
+        <div class="bubble x6" aria-hidden="true"></div>
+        <div class="bubble x7" aria-hidden="true"></div>
+        <div class="bubble x8" aria-hidden="true"></div>
+        <div class="bubble x9" aria-hidden="true"></div>
+        <div class="bubble x10" aria-hidden="true"></div>
         <!-- Bubbles Ends -->
     </header><!-- Header Ends -->
 
@@ -263,7 +269,10 @@
 
     <!-- Footer -->
     <footer>
-        <p>Built in 2023 by Nadia Pittiglio.</p>
+        <p>&copy 2023 Built by Nadia Pittiglio</p>
     </footer><!-- Footer Ends -->
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
