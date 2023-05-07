@@ -284,6 +284,7 @@ h2,
 h3,
 h4,
 ul,
+li,
 p,
 input,
 textarea,
@@ -326,6 +327,8 @@ a {
   background-color: #DB9999;
   cursor: pointer;
   text-align: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .button:hover, .button:focus {
   border: 3px solid #DB9999;
@@ -348,7 +351,7 @@ nav ul li {
   margin: 0 4%;
 }
 nav ul li a {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   color: inherit;
   text-shadow: 3px 1px #14070E;
   letter-spacing: 1.5px;
@@ -383,18 +386,18 @@ header {
   color: #FFF;
 }
 header .mainTitle {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 82px);
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header .mainTitle p {
   font-size: 1.2rem;
@@ -406,12 +409,12 @@ header .mainTitle .button {
 }
 
 .bubble {
-  border-radius: 50%;
-  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.2);
-  height: 30px;
-  position: absolute;
   width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.2);
 }
 
 @-webkit-keyframes animateBubble {
@@ -422,6 +425,7 @@ header .mainTitle .button {
     margin-top: -100%;
   }
 }
+
 @keyframes animateBubble {
   0% {
     margin-top: 10%;
@@ -447,93 +451,93 @@ header .mainTitle .button {
   }
 }
 .x1 {
-  -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: -5%;
   top: 5%;
+  left: -5%;
   -webkit-transform: scale(0.6);
-  transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 
 .x2 {
-  -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 5%;
   top: 80%;
+  left: 5%;
   -webkit-transform: scale(0.4);
-  transform: scale(0.4);
+          transform: scale(0.4);
+  -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+          animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
 }
 
 .x3 {
-  -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 10%;
   top: 40%;
+  left: 10%;
   -webkit-transform: scale(0.7);
-  transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 
 .x4 {
-  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 20%;
   top: 0;
+  left: 20%;
   -webkit-transform: scale(0.3);
-  transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+          animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
 }
 
 .x5 {
-  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 30%;
   top: 50%;
+  left: 30%;
   -webkit-transform: scale(0.5);
-  transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+          animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
 }
 
 .x6 {
-  -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 50%;
   top: 0;
+  left: 50%;
   -webkit-transform: scale(0.8);
-  transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 
 .x7 {
-  -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 65%;
   top: 70%;
+  left: 65%;
   -webkit-transform: scale(0.4);
-  transform: scale(0.4);
+          transform: scale(0.4);
+  -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 
 .x8 {
-  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 80%;
   top: 10%;
+  left: 80%;
   -webkit-transform: scale(0.3);
-  transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+          animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
 }
 
 .x9 {
-  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 90%;
   top: 50%;
+  left: 90%;
   -webkit-transform: scale(0.6);
-  transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+          animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
 }
 
 .x10 {
-  -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 80%;
   top: 80%;
+  left: 80%;
   -webkit-transform: scale(0.3);
-  transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+          animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 
 .about .wrapper {
@@ -739,7 +743,7 @@ form textarea {
 }
 form input:focus,
 form textarea:focus {
-  background: rgba(54, 92, 70, 0.3);
+  background: #F7E4DC;
 }
 form input {
   padding: 18px 20px;
@@ -833,6 +837,12 @@ footer {
     font-size: 1.3rem;
     margin: 8px 0 18px;
   }
+  .x8 {
+    left: 70%;
+  }
+  .x9, .x10 {
+    left: 80%;
+  }
   .about .wrapper p {
     width: 100%;
   }
@@ -851,8 +861,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .projectsSection .project .projectImage,
-.projectsSection .project .projectText {
+  .projectsSection .project .projectImage, .projectsSection .project .projectText {
     width: 100%;
   }
   .projectsSection .project .projectText {
@@ -866,6 +875,31 @@ footer {
   }
   .contactSection form {
     width: 85%;
+  }
+}
+@media (max-height: 970px) and (max-width: 450px) {
+  header {
+    height: 70vh;
+  }
+  header .mainTitle, header #menu {
+    height: 70vh;
+  }
+  .x2 {
+    top: 40%;
+  }
+  .x7 {
+    top: 50%;
+  }
+  .x10 {
+    top: 55%;
+  }
+}
+@media (max-height: 700px) and (max-width: 480px) {
+  header {
+    height: 100vh;
+  }
+  header .mainTitle, header #menu {
+    height: 100vh;
   }
 }
 /* Landscape phones and down */
@@ -883,6 +917,12 @@ footer {
   }
   header .mainTitle .button {
     padding: 9px 25px;
+  }
+  .x8 {
+    left: 60%;
+  }
+  .x9, .x10 {
+    left: 70%;
   }
   .about .wrapper {
     padding: 2.8rem 0 2rem;
@@ -922,11 +962,10 @@ footer {
   .contactSection h2 {
     padding: 2.5rem 0 0;
   }
-  .contactSection p,
-.contactSection form {
+  .contactSection p, .contactSection form {
     width: 95%;
   }
-  .contactSection form button {
+  .contactSection button {
     margin: 1.4rem 0 2.5rem;
   }
 }

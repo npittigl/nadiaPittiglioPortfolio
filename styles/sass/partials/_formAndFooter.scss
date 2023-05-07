@@ -50,7 +50,7 @@ form {
     textarea {
         border: none;
 
-        &:focus { background: rgba($primary, 0.3); }
+        &:focus { background: $accentTwo; }
     }
 
     input { padding: 18px 20px; }

@@ -6,6 +6,7 @@ h2,
 h3,
 h4,
 ul,
+li,
 p,
 input,
 textarea,
@@ -47,6 +48,7 @@ a {
     background-color: $accent;
     cursor: pointer; 
     text-align: center;
+    transition: 0.3s ease-in-out;
 
     &:hover,
     &:focus {

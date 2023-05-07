@@ -64,6 +64,10 @@
         }
     }
 
+    // Header Animation
+    .x8 { left: 70%; }
+    .x9, .x10 { left: 80%; }
+
     // About Section
     .about .wrapper p { width: 100%; }
 
@@ -78,21 +82,37 @@
     .projectsSection .project {
         flex-direction: column;
 
-        .projectImage,
-        .projectText { width: 100%; }
+        .projectImage, .projectText { width: 100%; }
 
-        .projectText { 
-            padding: 1.6rem 0.3rem 1.6rem 0.5rem; 
-        }
+        .projectText { padding: 1.6rem 0.3rem 1.6rem 0.5rem; }
     }
 
     // Contact Form
     .contactSection {
         h2 { padding: 3.5rem 0 7px; }
-
         p { width: 90%; }
-
         form { width: 85%; }
+    }
+}
+
+@media (max-height: 970px) and (max-width: 450px) {
+    // Nav & Header
+    header {
+        height: 70vh;
+        .mainTitle, #menu { height: 70vh; }
+    }
+
+    // Header Animation
+    .x2 { top: 40%; }
+    .x7 { top: 50%; }
+    .x10 { top: 55%; }
+}
+
+@media (max-height: 700px) and (max-width: 480px) {
+    // Nav & Header
+    header {
+        height: 100vh;
+        .mainTitle, #menu { height: 100vh; }
     }
 }
 
@@ -116,6 +136,10 @@
         .button { padding: 9px 25px; }
     }
 
+    // Header Animation
+    .x8 { left: 60%; }
+    .x9, .x10 { left: 70%; }
+
     // About Section
     .about .wrapper {
         padding: 2.8rem 0 2rem;
@@ -126,25 +150,25 @@
     .photo {
         padding: 0.58rem;
         box-shadow: 1px 0px 0 $black,
-            0px -1px 0 $black,
-            -1px 0px 0 $black,
-            0px 1px 0 $black,
-            9px 0 0 $accent,
-            10px 0 0 $black,
-            -9px 0 0 $accent,
-            -10px 0 0 $black,
-            0 -8px 0 $secondary,
-            0 -9px 0 $black,
-            0 8px 0 $secondary,
-            0 9px 0 $black;
+                    0px -1px 0 $black,
+                    -1px 0px 0 $black,
+                    0px 1px 0 $black,
+                    9px 0 0 $accent,
+                    10px 0 0 $black,
+                    -9px 0 0 $accent,
+                    -10px 0 0 $black,
+                    0 -8px 0 $secondary,
+                    0 -9px 0 $black,
+                    0 8px 0 $secondary,
+                    0 9px 0 $black;
 
         img {
             width: 145px;
             border: 3px solid $secondary;
             box-shadow: 1px 0px 3px $black,
-                0px -1px 3px $black,
-                -1px 0px 3px $black,
-                0px 1px 3px $black;
+                        0px -1px 3px $black,
+                        -1px 0px 3px $black,
+                        0px 1px 3px $black;
         }
     }
 
@@ -158,19 +182,13 @@
     // Projects Section
     .projectsSection {
         padding: 2.5rem 0 0.5rem;
-
         h2 { margin-bottom: 1.5rem; }
     }
 
     // Contact Form
     .contactSection {
-        h2 {
-            padding: 2.5rem 0 0;
-        }
-
-        p,
-        form { width: 95%; }
-
-        form button { margin: 1.4rem 0 2.5rem; }
+        h2 { padding: 2.5rem 0 0; }
+        p, form { width: 95%; }
+        button { margin: 1.4rem 0 2.5rem; }
     }
 }
