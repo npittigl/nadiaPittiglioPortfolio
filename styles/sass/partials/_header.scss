@@ -3,6 +3,7 @@
 // HEADER STYLES:
 header {
     height: 100vh;
+    max-height: 1000px;
     // Background Styles
     background-image:
             linear-gradient(to top right,
@@ -16,6 +17,7 @@ header {
     // Main Heading Styles
     .mainTitle {
         height: calc(100vh - 82px);
+        max-height: calc(1000px - 82px);
         
         p {
             font-size: 1.2rem;

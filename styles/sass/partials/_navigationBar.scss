@@ -18,11 +18,8 @@ nav li {
     display: none;
     background: none;
 
-    &:hover { color: $black; }
-    &:focus { 
-        padding: 3px;
-        border: 1px solid $accent; 
-    }
+    &:hover,
+    &:focus { border-color: transparent; }
 
     i.fa-bars, 
     i.fa-times { font-size: 1.65rem; }

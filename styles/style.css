@@ -409,12 +409,8 @@ nav li a {
   display: none;
   background: none;
 }
-.toggle:hover {
-  color: #14070E;
-}
-.toggle:focus {
-  padding: 3px;
-  border: 1px solid #DB9999;
+.toggle:hover, .toggle:focus {
+  border-color: transparent;
 }
 .toggle i.fa-bars,
 .toggle i.fa-times {
@@ -423,6 +419,7 @@ nav li a {
 
 header {
   height: 100vh;
+  max-height: 1000px;
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(20, 7, 14, 0.4)), color-stop(rgba(20, 7, 14, 0.6)), to(rgba(54, 92, 70, 0.8))), url("../assets/headerImage.jpg");
   background-image: linear-gradient(to top right, rgba(20, 7, 14, 0.4), rgba(20, 7, 14, 0.6), rgba(54, 92, 70, 0.8)), url("../assets/headerImage.jpg");
   background-size: cover;
@@ -430,6 +427,7 @@ header {
 }
 header .mainTitle {
   height: calc(100vh - 82px);
+  max-height: 918px;
 }
 header .mainTitle p {
   font-size: 1.2rem;
