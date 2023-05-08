@@ -19,3 +19,10 @@ menuUl.addEventListener('click', function() {
     menuList.classList.toggle('slideOut');
     menuButton.children[0].classList.toggle('fa-times');
 });
+
+// JS to clear submission form after use
+window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName('form')) {
+        form.reset();
+    }
+}
