@@ -1,22 +1,19 @@
 @use './variables' as *;
 
+// BASE STYLES:
+
 // Stripping Styles
-h1,
-h2,
-h3,
-h4,
-ul,
-li,
-p,
-input,
-textarea,
-button 
-{
+h1, h2, h3, 
+h4, ul, li, p, 
+input, textarea, 
+button {
     margin: 0;
     padding: 0;
 }
 
 ul { list-style: none; }
+
+.toggle, input, textarea { border: none; }
 
 // Wrapper
 .wrapper {
@@ -33,23 +30,20 @@ img {
     object-fit: cover;
 }
 
-.photo,
-.photo img { border-radius: 50%; }
+.photo, .photo img, .bubble { border-radius: 50%; }
 
-// Links 
+// Links/Buttons 
 a {
+    color: inherit;
     text-decoration: none;
     display: inline-block;
 }
 
 .button { 
     font-size: 0.80rem;
-    border: 3px solid transparent;
     background-color: $accent;
-    cursor: pointer; 
-    text-align: center;
-    transition: 0.3s ease-in-out;
-
+    border: 3px solid transparent;
+    
     &:hover,
     &:focus {
         border: 3px solid $accent;
@@ -57,5 +51,37 @@ a {
     }
 }
 
+a, .button, 
+.toggle { 
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+// Background Colours
+.skillsSection, footer { background-color: $primary; }
+
 // Flexbox
 .flexContainer { display: flex; }
+
+.mainTitle,
+.about .wrapper,
+.skillsSection .wrapper,
+.projectImage, .projectText,
+.contactSection .wrapper,
+form, .contactInfo { flex-direction: column; }
+
+nav ul,
+.mainTitle,
+.about .wrapper,
+.skillsSection .wrapper,
+.skillsList,
+.projectImage, .projectText,
+.contactSection .wrapper { justify-content: center; }
+
+.mainTitle,
+.about .wrapper,
+.skillsSection .wrapper,
+.projectImage,
+.contactSection .wrapper { align-items: center; }
+
+    

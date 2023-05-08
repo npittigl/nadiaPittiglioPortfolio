@@ -1,41 +1,39 @@
 @use './variables' as *;
 
+// HEADER STYLES:
 header {
     height: 100vh;
+    // Background Styles
     background-image:
             linear-gradient(to top right,
-                rgba($black, 0.4),
+                rgba($black, 0.4), 
                 rgba($black, 0.6),
-                rgba($primary, 0.8)),
-            url('../assets/headerImage.jpg');
+                rgba($primary, 0.8)), 
+                url('../assets/headerImage.jpg');
     background-size: cover;
     background-repeat: none;
-    color: $white;
 
+    // Main Heading Styles
     .mainTitle {
         height: calc(100vh - 82px);
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
+        
         p {
             font-size: 1.2rem;
             line-height: 1.32rem;
             margin: 12px 0 20px;
         }
 
+        // Contact Form Link
         .button { padding: 9px 45px; }
     }
 }
 
-// Styles for 'bubbles'
+// Styles For Animation 'Bubbles'
 .bubble {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     position: absolute;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 30px $black, inset 0px 10px 30px 5px rgba($white, 0.2);
 }
 
 // Keyframes

@@ -1,18 +1,13 @@
 @use './variables' as *;
 
-// About Section Styles
+// ABOUT SECTION STYLES: 
 .about .wrapper {
     padding: 4rem 0 3rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    
     h2 { margin: 1.2rem 0 0.3rem; }
 
     p { 
         width: 78%;
-        text-align: center;
-
         &:nth-child(even) { margin: 15px 0; }
     }
 }

@@ -1,39 +1,29 @@
 @use './variables' as *;
 
-nav ul {
-    justify-content: center;
+// NAVIGATION BAR STYLES:
+nav li {
+    font-size: 1rem;
+    margin: 0 4%;
     
-    li {
-        font-size: 1rem;
-        margin: 0 4%;
-
-        a {
-            padding: 1.5rem 1rem;
-            color: inherit;
-            text-shadow: 3px 1px $black;
-            letter-spacing: 1.5px;
-
-            &:hover,
-            &:focus {
-                color: $accent;
-            }
-        }
+    // Nav Links
+    a {
+        padding: 1.5rem 1rem;
+        text-shadow: 3px 1px $black;
+        letter-spacing: 1.7px;
     }
 }
 
 // Hamburger Menu Icon/Menu Slide Out Styles
-.toggle { 
+.toggle {
     display: none;
-    border: none;
     background: none;
-    cursor: pointer;
-    color: $accent;
 
-    i.fa-bars,
-    i.fa-times {
-        font-size: 1.65rem;
-
-        &:hover,
-        &:focus { color: $white; }
+    &:hover { color: $black; }
+    &:focus { 
+        padding: 3px;
+        border: 1px solid $accent; 
     }
+
+    i.fa-bars, 
+    i.fa-times { font-size: 1.65rem; }
 }

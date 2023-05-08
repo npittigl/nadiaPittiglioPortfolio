@@ -1,5 +1,7 @@
 @use './variables' as *;
 
+// GENERAL TYPOGRAPHY:
+
 // Root Font Size
 html { font-size: 125%; }
 
@@ -8,45 +10,50 @@ body {
     font-family: $bodyFont;
     font-size: 0.85rem;
     line-height: 22px;
+    letter-spacing: 0.4px;
+    color: $black;
+
+    nav, h1, h2, 
+    h3, h4, .button,
+    .skillsList p, label { font-family: $headingFont; }
 }
 
-body, 
-.button { color: $black; }
+// Font Colours
+body, header .button { color: $black; }
 
-// Header/Nav, Headings & Button Font Styles
-header { 
-    letter-spacing: 1px;
-    
-    h1 {
-        font-size: 4rem;
-        line-height: 4.1rem;
-    }
+header, footer,
+.skillsSection, .mediaLinks a { color: $white; }
+
+nav a:hover, nav a:focus, .toggle { color: $accent; }
+
+header, h4, label, footer { letter-spacing: 1px; }
+
+// Headings Typography
+h1 {
+    font-size: 4rem;
+    line-height: 4.1rem;
 }
 
-nav,
-h1,
-h2,
-h3,
-h4,
-.button,
-.skillsList p { font-family: $headingFont; }
-
-// mk h2 font-size smaller?
 h2 { 
     font-size: 3rem;
     line-height: 3.1rem; 
 }
 
 h3 { 
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
 }
 
-// change <p> in skills section to <h4>?
 h4 {
-    text-transform: uppercase;
     color: $primary;
-    font-size: 0.70rem;
-    line-height: 0.80rem;
-    letter-spacing: 1px;
+    font-size: 0.80rem;
+    line-height: 0.85rem;
 }
+
+// Text Alignment/Transform
+.button, .mainTitle,
+.about p, .skillsList,
+.projectsSection h2,
+.contactSection p, footer { text-align: center; }
+
+.skillsList, h4 { text-transform: uppercase; }

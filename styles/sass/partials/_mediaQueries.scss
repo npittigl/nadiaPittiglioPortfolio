@@ -1,24 +1,33 @@
 @use './variables' as *;
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {}
+// To Reduce Animation Motion
+@media (prefers-reduced-motion: reduce) {
+    // Bubbles Animation
+    .x1, .x2, .x3, .x4, .x5, 
+    .x6, .x7, .x8, .x9, .x10 { animation: none; }
+}
 
+// FIRST MAJOR BREAK POINT
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) { .wrapper { width: 90%; } }
+
+// SECOND MAJOR BREAK POINT
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    // NAV SLIDE OUT MENU:
+    // Nav Slide Out Menu Styles
     .toggle {
         display: block;
-        position: fixed;
         right: 5%;
         top: 20px;
         z-index: 10;
     }
 
+    .toggle, #menu { position: fixed;}
+
     #menu {
         width: 100vw;
         height: 100vh;
         background: $primary;
-        position: fixed;
         top: 0;
         left: -100vw;
         z-index: 9;
@@ -74,16 +83,18 @@
     // Skills Section
     .skillsList {
         width: 100%;
-        li { width: calc(100% / 4); }
-        .half { width: calc(100% / 3); }
+        img { width: 2.8rem; }
+        li { 
+            width: calc(100% / 5); 
+            p { font-size: 0.65rem; }
+            i.fab, i.fas { font-size: 2.8rem; }
+        }
     }
 
     // Projects Section
     .projectsSection .project {
         flex-direction: column;
-
         .projectImage, .projectText { width: 100%; }
-
         .projectText { padding: 1.6rem 0.3rem 1.6rem 0.5rem; }
     }
 
@@ -95,35 +106,44 @@
     }
 }
 
+// Height Break Point One
 @media (max-height: 970px) and (max-width: 450px) {
     // Nav & Header
-    header {
-        height: 70vh;
-        .mainTitle, #menu { height: 70vh; }
-    }
-
+    header, header .mainTitle, #menu { height: 70vh; }
+    
     // Header Animation
     .x2 { top: 40%; }
     .x7 { top: 50%; }
     .x10 { top: 55%; }
 }
 
+// Height Break Point Two
 @media (max-height: 700px) and (max-width: 480px) {
     // Nav & Header
-    header {
-        height: 100vh;
-        .mainTitle, #menu { height: 100vh; }
-    }
+    header, header .mainTitle, #menu { height: 100vh; }
 }
 
+// First Small Break Point
+@media (max-width: 680px) {
+    // Skills Section
+    .skillsList li { width: calc(100% / 3.5); }
+}
+
+// THIRD MAJOR BREAK POINT
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+    body {
+        font-size: 0.80rem;
+        line-height: 20px;
+    }
+
     // Wrapper
     .wrapper { width: 95%; }
 
     // Section Headings
     h2 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         line-height: 3.1rem;
     }
 

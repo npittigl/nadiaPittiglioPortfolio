@@ -1,25 +1,15 @@
 @use './variables' as *;
 
+// SKILLS SECTION STYLES: 
 .skillsSection {
-    background-color: $primary;
-    color: $white;
-    padding: 3rem 0;
-
-    .wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
+    padding: 3.2rem 0;
     h2 { margin-bottom: 2rem; }
 }
 
+// Skills Icons Styles
 .skillsList {
-    width: 80%;
+    width: 75%;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
 
     img { 
         width: 3rem; 
@@ -31,7 +21,7 @@
         margin: 10px 0;
 
         p { 
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             letter-spacing: 1.5px;
             margin: 5px 0;
         }
