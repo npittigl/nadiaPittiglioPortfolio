@@ -19,11 +19,7 @@ header {
         height: calc(100vh - 82px);
         max-height: calc(1000px - 82px);
         
-        h2 {
-            font-size: 1.2rem;
-            line-height: 1.32rem;
-            margin: 12px 0 20px;
-        }
+        h2 { margin: 12px 0 20px; }
 
         // Contact Form Link
         .button { padding: 9px 45px; }

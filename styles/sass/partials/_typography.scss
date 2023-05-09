@@ -14,7 +14,7 @@ body {
     color: $black;
 
     nav, h1, h2, 
-    h3, h4, .button,
+    h3, h4, h5, .button,
     .skillsList p, label { font-family: $headingFont; }
 }
 
@@ -26,12 +26,17 @@ header, footer,
 
 nav a:hover, nav a:focus, .toggle { color: $accent; }
 
-header, h4, label, .linkToTopDiv, footer { letter-spacing: 1px; }
+header, h5, label, .linkToTopDiv, footer { letter-spacing: 1px; }
 
 // Headings Typography
 h1 {
     font-size: 4rem;
     line-height: 4.1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    line-height: 1.32rem;
 }
 
 h3 { 
@@ -53,8 +58,8 @@ h5 {
 // Text Alignment/Transform
 .button, .mainTitle,
 .about p, .skillsList,
-.projectsSection h2,
+.projectsSection h3,
 .contactSection p, 
 .linkToTopDiv, footer { text-align: center; }
 
-.skillsList, h4 { text-transform: uppercase; }
+.skillsList, h5 { text-transform: uppercase; }
