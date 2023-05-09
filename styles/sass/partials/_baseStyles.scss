@@ -30,7 +30,8 @@ img {
     object-fit: cover;
 }
 
-.photo, .photo img, .bubble { border-radius: 50%; }
+.photo, .photo img, 
+.bubble, .topLink { border-radius: 50%; }
 
 // Links/Buttons 
 a {

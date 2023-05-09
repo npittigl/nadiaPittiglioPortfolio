@@ -26,7 +26,7 @@ header, footer,
 
 nav a:hover, nav a:focus, .toggle { color: $accent; }
 
-header, h4, label, footer { letter-spacing: 1px; }
+header, h4, label, .linkToTopDiv, footer { letter-spacing: 1px; }
 
 // Headings Typography
 h1 {
@@ -54,6 +54,7 @@ h4 {
 .button, .mainTitle,
 .about p, .skillsList,
 .projectsSection h2,
-.contactSection p, footer { text-align: center; }
+.contactSection p, 
+.linkToTopDiv, footer { text-align: center; }
 
 .skillsList, h4 { text-transform: uppercase; }

@@ -15,6 +15,8 @@
     <script src="https://kit.fontawesome.com/7313fc4cea.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- skip link to main content -->
+    <a href="#mainContent" class="skipLink">Skip to main Content</a>
     <!-- Header Begins -->
     <header id="home">
         <!-- Header Wrapper -->
@@ -58,7 +60,7 @@
     </header><!-- Header Ends -->
 
     <!-- Main Begins -->
-    <main>
+    <main id="mainContent">
     <!-- About Section -->
         <section class="about" id="about">
             <!-- Section Wrapper -->
@@ -248,24 +250,34 @@
 
                 <!-- Contact Form Begins -->
                 <form action="https://formspree.io/f/moqzrzbl" method="POST" class="flexContainer">
+                    <!-- Name Input -->
                     <div class="contactInfo flexContainer">
                         <label for="name">Name</label>
                         <input type="text" name="name" required>
                     </div>
-                    
+                    <!-- Email Input -->
                     <div class="contactInfo flexContainer">
                         <label for="email">Email Address</label>
                         <input type="email" name="email" required>
                     </div>
-                    
+                    <!-- Text Area -->
                     <div class="contactInfo flexContainer">
                         <label for="message">Message</label>
                         <textarea name="message" id="" cols="30" rows="6" required></textarea>
                     </div>
-                    
+                    <!-- Form Submit Button -->
                     <button type="submit" class="button">Submit</button>
                 </form><!-- Form Ends -->
-            </div><!-- Wrapper Ends -->
+            </div><!-- Wrapper Ends --> 
+
+            <!-- Link to Return to Top of Page -->
+            <div class="linkToTopDiv">
+                <a href="#home" class="topLink">
+                    <span class="sr-only">Click to return to top of the page</span>
+                    <img class="topLink" src="./assets/jellyfish.png" alt="Icon of a jellyfish">
+                </a>
+                <p aria-hidden="true">Back To Top</p>
+            </div><!-- Top Link Ends -->
         </section><!-- Contact Section Ends -->
     </main><!-- Main Ends -->
 

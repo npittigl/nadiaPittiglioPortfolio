@@ -9,7 +9,10 @@
 
 // FIRST MAJOR BREAK POINT
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) { .wrapper { width: 90%; } }
+@media (max-width: 940px) { 
+    // Wrapper
+    .wrapper { width: 90%; } 
+}
 
 // SECOND MAJOR BREAK POINT
 /* Landscape phone to portrait tablet */
@@ -101,7 +104,7 @@
     // Contact Form
     .contactSection {
         h2 { padding: 3.5rem 0 7px; }
-        p { width: 90%; }
+        .wrapper p { width: 90%; }
         form { width: 85%; }
     }
 }
@@ -123,7 +126,7 @@
     header, header .mainTitle, #menu { height: 100vh; }
 }
 
-// First Small Break Point
+// 1st Small Break Point
 @media (max-width: 680px) {
     // Skills Section
     .skillsList li { width: calc(100% / 3.5); }
@@ -132,7 +135,7 @@
 // THIRD MAJOR BREAK POINT
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
+    // General Typography 
     body {
         font-size: 0.80rem;
         line-height: 20px;
@@ -203,12 +206,25 @@
     .projectsSection {
         padding: 2.5rem 0 0.5rem;
         h2 { margin-bottom: 1.5rem; }
+        img { min-height: 200px; }
     }
 
     // Contact Form
     .contactSection {
         h2 { padding: 2.5rem 0 0; }
-        p, form { width: 95%; }
+        .wrapper p, form { width: 95%; }
         button { margin: 1.4rem 0 2.5rem; }
+    }
+}
+
+// 2nd Small Break Point
+@media(max-width: 400px) {
+    // Link to Top of Page
+    .linkToTopDiv {
+        font-size: 0.60rem;
+        line-height: 0.63rem;
+        padding: 0.9rem 0 1rem;
+    
+        .topLink { width: 40px; }
     }
 }

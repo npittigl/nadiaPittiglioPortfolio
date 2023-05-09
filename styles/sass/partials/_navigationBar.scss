@@ -1,11 +1,42 @@
 @use './variables' as *;
 
 // NAVIGATION BAR STYLES:
+
+// Skip Link Styles
+a.skipLink {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+
+    &:focus,
+    &:active {
+        color: $white;
+        background-color: $black;
+        left: auto;
+        top: auto;
+        width: 30%;
+        height: auto;
+        overflow: auto;
+        margin: 10px 35%;
+        padding: 5px;
+        border-radius: 15px;
+        border: 4px solid yellow;
+        text-align: center;
+        font-size: 1.2em;
+        z-index: 999;
+        left: 0;
+    }
+}
+
+// Nav Links Styles
 nav li {
     font-size: 1rem;
     margin: 0 4%;
     
-    // Nav Links
     a {
         padding: 1.5rem 1rem;
         text-shadow: 3px 1px $black;
