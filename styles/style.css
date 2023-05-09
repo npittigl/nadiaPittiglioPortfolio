@@ -267,17 +267,17 @@ h1 {
   line-height: 4.1rem;
 }
 
-h2 {
+h3 {
   font-size: 3rem;
   line-height: 3.1rem;
 }
 
-h3 {
+h4 {
   font-size: 1.4rem;
   line-height: 1.5rem;
 }
 
-h4 {
+h5 {
   color: #365C46;
   font-size: 0.8rem;
   line-height: 0.85rem;
@@ -296,7 +296,7 @@ h4 {
 }
 
 h1, h2, h3,
-h4, ul, li, p,
+h4, h5, ul, li, p,
 input, textarea,
 button {
   margin: 0;
@@ -458,7 +458,7 @@ header .mainTitle {
   height: calc(100vh - 82px);
   max-height: 918px;
 }
-header .mainTitle p {
+header .mainTitle h2 {
   font-size: 1.2rem;
   line-height: 1.32rem;
   margin: 12px 0 20px;
