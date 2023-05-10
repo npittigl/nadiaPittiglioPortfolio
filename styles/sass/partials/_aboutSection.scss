@@ -9,6 +9,7 @@
     p { 
         width: 78%;
         max-width: 800px;
+        padding: 5px;
         &:nth-child(even) { margin: 15px 0; }
     }
 }
