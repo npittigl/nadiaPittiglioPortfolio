@@ -614,6 +614,7 @@ header .mainTitle .button {
 .about .wrapper p {
   width: 78%;
   max-width: 800px;
+  padding: 5px;
 }
 .about .wrapper p:nth-child(even) {
   margin: 15px 0;
