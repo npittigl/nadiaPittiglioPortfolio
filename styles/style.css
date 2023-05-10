@@ -245,6 +245,14 @@ body .skillsList p, body label {
   font-family: "Roboto", sans-serif;
 }
 
+.greeting {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #365C46;
+  letter-spacing: 1.3px;
+}
+
 body, header .button {
   color: #14070E;
 }
@@ -614,7 +622,7 @@ header .mainTitle .button {
 .about .wrapper p {
   width: 78%;
   max-width: 800px;
-  padding: 5px;
+  padding: 3px 5px;
 }
 .about .wrapper p:nth-child(even) {
   margin: 15px 0;
@@ -934,6 +942,9 @@ footer {
   body {
     font-size: 0.8rem;
     line-height: 20px;
+  }
+  .greeting {
+    font-size: 0.82rem;
   }
   .wrapper {
     width: 95%;

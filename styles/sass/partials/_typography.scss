@@ -18,6 +18,14 @@ body {
     .skillsList p, label { font-family: $headingFont; }
 }
 
+.greeting {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.90rem;
+    color: $primary;
+    letter-spacing: 1.3px;
+}
+
 // Font Colours/Letter Spacing
 body, header .button { color: $black; }
 
