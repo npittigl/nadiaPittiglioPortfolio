@@ -34,7 +34,8 @@ a.skipLink {
 
 // Nav Links Styles
 nav li {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.15rem;
     margin: 0 4%;
     
     a {
@@ -48,9 +49,13 @@ nav li {
 .toggle {
     display: none;
     background: none;
+    padding: 3px;
 
-    &:hover,
-    &:focus { border-color: transparent; }
+    &:hover, 
+    &:focus { 
+        border-color: transparent; 
+        outline: 1px solid;
+    }
 
     i.fa-bars, 
     i.fa-times { font-size: 1.65rem; }

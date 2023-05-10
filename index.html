@@ -22,13 +22,13 @@
         <!-- Header Wrapper -->
         <div class="wrapper">
             <!-- Navigation Bar -->
-            <nav id="menu">
+            <nav id="navMenu" class="navMenu" aria-labelledby="toggle">
                 <!-- Hamburger Menu Icon -->
-                <button class="toggle" aria-label="Click here to open or close main menu">
+                <button id="toggle" class="toggle" aria-expanded="false" aria-label="show navigation menu">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
         
-                <ul class="flexContainer" id="menuUl">
+                <ul class="flexContainer vh" id="menuUl">
                     <li><a href="#home" class="menuLink">Home</a></li>
                     <li><a href="#about" class="menuLink">About</a></li>
                     <li><a href="#projects" class="menuLink">Projects</a></li>
@@ -132,6 +132,7 @@
 
         <!-- Projects Section -->
         <section class="projectsSection" id="projects">
+            <!-- Section Wrapper Begins -->
             <div class="wrapper">
                 <h3>Projects</h3>
                 <!-- Project One -->
@@ -149,7 +150,7 @@
 
                         <!-- Project One Links -->
                         <div class="buttons">
-                            <a class="button" href="/harpersBlog" target="_blank">
+                            <a class="button" href="https://harpersblogmultipage.netlify.app/" target="_blank">
                                 View Live
                                 <span class="sr-only">Live link will open in a new page.</span>
                             </a>
@@ -191,28 +192,29 @@
                 <!-- Project Three -->
                 <div class="project flexContainer">
                     <!-- Image of Project Three -->
-                    <div class="projectImage">
-                        <img src="https://placehold.co/600x400" alt="">
+                    <div class="projectImage flexContainer">
+                        <img src="./assets/harpersBlog.png"
+                            alt="Harper's Blog is displayed on a Mac laptop & iPhone screen to show responsive design.">
                     </div><!-- Image Ends -->
+
+                <!-- Project Three Text Begins -->
+                <div class="projectText flexContainer">
+                    <h4>Harper's Blog</h4>
+                    <h5>html, css, sass</h5>
+                    <p>Created a multi-page, fully functional site based on a client brief with design files. Responsive across multiple devices and screen sizes.</p>
                 
-                    <!-- Project Three Text Begins -->
-                    <div class="projectText flexContainer">
-                        <h4>Project 3 Title Here</h4>
-                        <h5>html, css, javascript, react</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est assumenda debitis, expedita amet quisquam animi aliquid dolore exercitationem ipsa. Expedita possimus totam fuga incidunt odit!</p>
-                
-                        <!-- Project Three Links -->
-                        <div class="buttons">
-                            <a class="button" href="#">
-                                View Live
-                                <span class="sr-only">Live link will open in a new page.</span>
-                            </a>
-                            <a class="button" href="#">
-                                View Code
-                                <span class="sr-only">Code link will open in a new page.</span>
-                            </a>
-                        </div><!-- Links Ends -->
-                    </div><!-- Text Ends -->
+                    <!-- Project Three Links -->
+                    <div class="buttons">
+                        <a class="button" href="https://harpersblogmultipage.netlify.app/" target="_blank">
+                            View Live
+                            <span class="sr-only">Live link will open in a new page.</span>
+                        </a>
+                        <a class="button" href="https://github.com/npittigl/nadiaPittiglioProjectOne" target="_blank">
+                            View Code
+                            <span class="sr-only">Code link will open in a new page.</span>
+                        </a>
+                    </div><!-- Links Ends -->
+                </div><!-- Text Ends -->
                 </div><!-- Project Three Ends -->
             </div><!-- Wrapper Ends -->
         </section><!-- Projects Section Ends -->
@@ -271,11 +273,11 @@
             </div><!-- Wrapper Ends --> 
 
             <!-- Link to Return to Top of Page -->
-            <div class="linkToTopDiv">
-                <a href="#home" class="topLink">
-                    <img class="topLink" src="./assets/jellyfish.png" alt="Icon of a jellyfish">
+            <div class="linkToTop">
+                <a href="#home">
+                    <img src="./assets/jellyfish.png" alt="Icon of a jellyfish">
+                    Back To Top
                 </a>
-                <p>Back To Top</p>
             </div><!-- Top Link Ends -->
         </section><!-- Contact Section Ends -->
     </main><!-- Main Ends -->

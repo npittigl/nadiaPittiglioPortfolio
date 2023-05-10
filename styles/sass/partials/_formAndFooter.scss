@@ -53,22 +53,20 @@ form {
 }
 
 // Return to Top Link Styles
-.linkToTopDiv {
+.linkToTop {
     font-size: 0.70rem;
     line-height: 0.75rem;
     padding: 1rem 0 1.2rem;
 
-    .topLink { width: 50px; }
-
-    a { 
+    img {
+        width: 50px;
+        margin: 8px auto;
+        border: 3.5px solid $primary;
         box-shadow: 0 0 5px $tertiary;
-        margin-bottom: 5px;
-
-        img { border: 3.5px solid $primary; }
-
-        &:hover,
-        &:focus { box-shadow: 0 0 8px $accent, 0 0 3px $black; }
     }
+
+    a:hover img,
+    a:focus img { box-shadow: 0 0 8px $accent, 0 0 3px $black; }
 }
 
 // Footer Styles

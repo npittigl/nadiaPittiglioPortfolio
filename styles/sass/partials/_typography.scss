@@ -18,7 +18,7 @@ body {
     .skillsList p, label { font-family: $headingFont; }
 }
 
-// Font Colours
+// Font Colours/Letter Spacing
 body, header .button { color: $black; }
 
 header, footer,
@@ -26,7 +26,7 @@ header, footer,
 
 nav a:hover, nav a:focus, .toggle { color: $accent; }
 
-header, h5, label, .linkToTopDiv, footer { letter-spacing: 1px; }
+header, h5, label, .linkToTop, footer { letter-spacing: 1px; }
 
 // Headings Typography
 h1 {
@@ -60,6 +60,6 @@ h5 {
 .about p, .skillsList,
 .projectsSection h3,
 .contactSection p, 
-.linkToTopDiv, footer { text-align: center; }
+.linkToTop, footer { text-align: center; }
 
 .skillsList, h5 { text-transform: uppercase; }

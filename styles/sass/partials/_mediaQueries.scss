@@ -25,9 +25,11 @@
         z-index: 10;
     }
 
-    .toggle, #menu { position: fixed;}
+    .toggle, .navMenu { position: fixed;}
 
-    #menu {
+    .vh { visibility: hidden; }
+
+    .navMenu {
         width: 100vw;
         height: 100vh;
         background: $primary;
@@ -35,13 +37,11 @@
         left: -100vw;
         z-index: 9;
         transition: all 1s ease-in-out;
-        
+    
         ul { flex-direction: column; }
 
         ul, a { height: 100%; }
-
-        li, a { width: inherit; }
-
+    
         li {
             margin: 0;
             height: 20%;
@@ -58,7 +58,7 @@
         }
     }
 
-    #menu.slideOut {
+    .navMenu.slideOut {
         left: 0;
         transition: all 1s ease-in-out;
     }
@@ -112,7 +112,7 @@
 // Height Break Point One
 @media (max-height: 970px) and (max-width: 450px) {
     // Nav & Header
-    header, header .mainTitle, #menu { height: 70vh; }
+    header, header .mainTitle, .navMenu { height: 70vh; }
     
     // Header Animation
     .x2 { top: 40%; }
@@ -123,7 +123,7 @@
 // Height Break Point Two
 @media (max-height: 700px) and (max-width: 480px) {
     // Nav & Header
-    header, header .mainTitle, #menu { height: 100vh; }
+    header, header .mainTitle, .navMenu { height: 100vh; }
 }
 
 // 1st Small Break Point

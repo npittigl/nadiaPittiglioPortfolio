@@ -3,8 +3,8 @@
 // BASE STYLES:
 
 // Stripping Styles
-h1, h2, h3, 
-h4, h5, ul, li, p, 
+h1, h2, h3, h4, 
+h5, ul, li, p, 
 input, textarea, 
 button {
     margin: 0;
@@ -31,7 +31,7 @@ img {
 }
 
 .photo, .photo img, 
-.bubble, .topLink { border-radius: 50%; }
+.bubble, .linkToTop img { border-radius: 50%; }
 
 // Links/Buttons 
 a {
@@ -52,10 +52,11 @@ a {
     }
 }
 
-a, .button, 
+a, 
+.button, 
 .toggle { 
     cursor: pointer;
-    transition: 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 // Background Colours
