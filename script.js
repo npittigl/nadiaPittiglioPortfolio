@@ -35,3 +35,4 @@ window.onbeforeunload = () => {
     }
 }
 
+// form doesn't clear in safari

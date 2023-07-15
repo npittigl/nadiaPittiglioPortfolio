@@ -14,10 +14,7 @@
 .project {
     margin: 20px 0;
 
-    img { 
-        max-height: 400px; 
-        margin: 0 auto;
-    }
+    img { max-height: 400px; }
 
     &:nth-child(odd) { 
         flex-direction: row-reverse; 

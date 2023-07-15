@@ -687,7 +687,6 @@ header .mainTitle .button {
 }
 .project img {
   max-height: 400px;
-  margin: 0 auto;
 }
 .project:nth-child(odd) {
   -webkit-box-orient: horizontal;
