@@ -683,7 +683,7 @@ header .mainTitle .button {
 }
 
 .project {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 .project img {
   max-height: 400px;
@@ -701,6 +701,9 @@ header .mainTitle .button {
 }
 .project .projectText {
   padding: 1.6rem 1rem 1.6rem 1.6rem;
+}
+.project .rightMargin {
+  margin-right: 30px;
 }
 .project .buttons {
   margin-top: 15px;
@@ -1001,7 +1004,7 @@ footer {
     margin-bottom: 1.5rem;
   }
   .projectsSection img {
-    min-height: 200px;
+    min-height: 170px;
   }
   .contactSection h3 {
     padding: 2.5rem 0 0;

@@ -12,12 +12,12 @@
 
 // Project Images & Text
 .project {
-    margin: 20px 0;
+    margin: 40px 0;
 
     img { max-height: 400px; }
 
     &:nth-child(odd) { 
-        flex-direction: row-reverse; 
+        flex-direction: row-reverse;
         text-align: right;
     }
 
@@ -25,6 +25,8 @@
     .projectText { width: 50%; }
 
     .projectText { padding: 1.6rem 1rem 1.6rem 1.6rem; }
+
+    .rightMargin { margin-right: 30px; }
 
     // Project Links
     .buttons {
